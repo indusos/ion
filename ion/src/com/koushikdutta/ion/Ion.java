@@ -252,8 +252,8 @@ public class Ion {
      * @return
      */
     public Builders.IV.F<? extends Builders.IV.F<?>> build(ImageView imageView) {
-        if (Thread.currentThread() != Looper.getMainLooper().getThread())
-            throw new IllegalStateException("must be called from UI thread");
+//        if (Thread.currentThread() != Looper.getMainLooper().getThread())
+//            throw new IllegalStateException("must be called from UI thread");
         bitmapBuilder.reset();
         bitmapBuilder.ion = this;
         return bitmapBuilder.withImageView(imageView);
